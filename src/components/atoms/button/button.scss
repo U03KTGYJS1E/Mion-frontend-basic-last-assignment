@@ -1,6 +1,18 @@
 @use "../../variables" as *;
 
 .assignment-button-button {
-  color: $color-example;
+  color: $white;
   font-size: $fontsize-example;
+  height: 55px;
+  width: 200px;
+  left: 24px;
+  top: 24px;
+  padding: 0px 16px 0px 16px;
+  border-radius: 0px;
+  text-align: center;
+  background-color: black;
+}
+.assignment-button-button:hover {
+  color: $white;
+  background-color: #442606;
 }
