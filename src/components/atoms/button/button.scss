@@ -7,8 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 16px;
-  position: absolute;
   height: 55px;
   width: 200px;
 
@@ -18,11 +16,11 @@
     text-decoration: none;
   }
 
+  @media screen and(max-width: $breakpoint-lg) {
+    width: 150px;
+  }
   @media screen and(max-width: $breakpoint-md) {
     height: 45px;
     width: 180px;
-  }
-  @media screen and(max-width: $breakpoint-lg) {
-    width: 150px;
   }
 }
