@@ -10,16 +10,21 @@
   .title {
     font-family: $fontfamily-mincho;
     font-size: $fontsize-xl;
+    line-height: 54px;
+    margin-bottom: 10px;
     @media screen and (max-width: $breakpoint-lg) {
       font-size: $fontsize-l;
+      line-height: 30px;
+      margin-bottom: 6px;
     }
   }
   .explain {
     font-family: $fontfamily-gothic;
     font-size: $fontsize-s;
-    padding-top: 10px;
+    line-height: 36px;
+
     @media screen and (max-width: $breakpoint-lg) {
-      padding-top: 6px;
+      line-height: 28px;
     }
   }
 }
