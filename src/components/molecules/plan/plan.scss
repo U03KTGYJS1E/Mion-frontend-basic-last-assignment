@@ -1,0 +1,66 @@
+@use "../../variables" as *;
+
+.plan {
+  display: flex;
+  text-align: center;
+  .odd {
+    border: 0px solid;
+  }
+  .even {
+    outline: 5px solid #442606;
+    outline-offset: -5px;
+  }
+
+  .plan-text-o {
+    background: #a19283;
+    color: white;
+    height: 64px;
+    padding: 15px 0px 20px;
+  }
+  .plan-text-e {
+    background-color: #442606;
+    color: white;
+    height: 64px;
+    padding: 15px 0px 20px;
+  }
+
+  .monthly-fee {
+    height: 142px;
+    padding: 24px;
+    background: #ece9e6;
+    border: 1px solid $gray_nobel;
+    box-sizing: border-box;
+    color: #442606;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    .¥ {
+      font-size: 20px;
+      line-height: 29px;
+    }
+    .fee {
+      color: black;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 16px;
+    }
+  }
+
+  .list {
+    p {
+      border: 1px solid $gray_nobel;
+      border-top: 0px;
+      box-sizing: border-box;
+      height: 60px;
+      padding: 20px 10px;
+      margin: 0px;
+      line-height: 20px;
+      .last {
+        @media screen and (max-width: $breakpoint-md) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
