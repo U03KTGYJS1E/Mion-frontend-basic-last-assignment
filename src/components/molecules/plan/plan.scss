@@ -47,7 +47,10 @@
 }
 
 .list {
-  p {
+  padding: 0;
+
+  li {
+    list-style: none;
     border: 1px solid $gray_nobel;
     border-top: 0px;
     box-sizing: border-box;
@@ -55,6 +58,7 @@
     padding: 20px 10px;
     margin: 0px;
     line-height: 20px;
+    overflow-wrap: break-word;
     .last {
       @media screen and (max-width: $breakpoint-md) {
         margin-bottom: 20px;
