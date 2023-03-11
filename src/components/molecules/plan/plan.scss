@@ -1,67 +1,65 @@
 @use "../../variables" as *;
 
 .plan {
-  display: flex;
   text-align: center;
-  .odd {
+  &:nth-child(odd) {
     border: 0px solid;
+    .plan-text {
+      background: $orange_zorba;
+      color: $white;
+      padding: 20px 0px;
+    }
   }
-  .even {
+  &:nth-child(even) {
     outline: 5px solid $orange_bistre;
     outline-offset: -5px;
+    .plan-text {
+      background-color: $orange_bistre;
+      color: $white;
+      padding: 20px 0px;
+    }
   }
 
-  .plan-text-o {
-    background: $orange_zorba;
-    color: $white;
-    padding: 20px 0px;
-  }
-  .plan-text-e {
-    background-color: $orange_bistre;
-    color: $white;
-    padding: 20px 0px;
-  }
-}
-
-.monthly-fee {
-  height: 142px;
-  padding: 24px;
-  background: $gray_desertStorm;
-  border: 1px solid $gray_gainsboro;
-  box-sizing: border-box;
-  color: $orange_bistre;
-  font-weight: 700;
-  font-size: $fontsize-xxl;
-  line-height: 58px;
-  .¥ {
-    font-size: $fontsize-l;
-    line-height: 29px;
-  }
-  .fee {
-    color: $black;
-    font-weight: 400;
-    font-size: $fontsize-s;
-    line-height: 20px;
-    margin-top: 16px;
-  }
-}
-
-.list {
-  padding: 0;
-
-  li {
-    list-style: none;
-    border: 1px solid $gray_nobel;
-    border-top: 0px;
+  .monthly-fee {
+    height: 142px;
+    padding: 24px;
+    background: $gray_desertStorm;
+    border: 1px solid $gray_gainsboro;
     box-sizing: border-box;
-    height: 60px;
-    padding: 20px 10px;
-    margin: 0px;
-    line-height: 20px;
-    overflow-wrap: break-word;
-    .last {
-      @media screen and (max-width: $breakpoint-md) {
-        margin-bottom: 20px;
+    color: $orange_bistre;
+    font-weight: 700;
+    font-size: $fontsize-xxl;
+    line-height: 58px;
+    .¥ {
+      font-size: $fontsize-l;
+      line-height: 29px;
+    }
+    .fee {
+      color: $black;
+      font-weight: 400;
+      font-size: $fontsize-s;
+      line-height: 20px;
+      margin-top: 16px;
+    }
+  }
+
+  .list {
+    padding: 0;
+    margin-bottom: 0;
+    li {
+      list-style: none;
+      border: 1px solid $gray_nobel;
+      border-top: 0px;
+      box-sizing: border-box;
+      height: 60px;
+      padding: 20px 10px;
+      margin: 0px;
+      line-height: 20px;
+      overflow-wrap: break-word;
+      &:last-child {
+        @media screen and (max-width: $breakpoint-md) {
+          margin-bottom: 20px;
+        }
       }
     }
   }
