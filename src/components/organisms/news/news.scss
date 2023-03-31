@@ -1,4 +1,35 @@
 @use "../../variables" as *;
 .page {
-  background-color: antiquewhite;
+  width: 460px;
+  .news-and-events-title {
+    margin-bottom: 32px;
+  }
+  .list {
+    align-items: center;
+    background-color: $white;
+    border: 1px solid $gray_gainsboro;
+    padding-left: 0px;
+    margin-bottom: 30px;
+    li {
+      border-bottom: 1px solid $gray_gainsboro;
+      list-style: none;
+
+      &:last-child {
+        border-bottom: 0px;
+      }
+      .date {
+        color: $gray_nobel;
+      }
+      .info {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .news-and-events-more {
+    float: right;
+    margin-top: none;
+  }
 }
