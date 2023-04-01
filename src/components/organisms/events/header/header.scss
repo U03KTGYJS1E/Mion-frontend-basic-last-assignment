@@ -1,0 +1,12 @@
+@use "../../variables" as *;
+.itembar {
+  background-color: $black;
+  p {
+    color: $white;
+  }
+  .item {
+    &:hover {
+      color: $gray_nobel;
+    }
+  }
+}
