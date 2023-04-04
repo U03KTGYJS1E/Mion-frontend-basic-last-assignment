@@ -1,13 +1,52 @@
-<div class="itembar">
-  <p>Switch</p>
-  <div class="item">
-    <button class="home">HOME</button>
-    <button class="concept">CONCEPT</button>
-    <button class="service">SERVICE</button>
-    <button class="floor">FLOOR</button>
-    <button class="interview">INTERVIEW</button>
-    <button class="blog">BLOG</button>
-    <button class="access">ACCESS</button>
-    <button class="download">DOWNLOAD</button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"
+      ><img src="../../../img/header.png" alt=""
+    /></a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--ハンバーガーメニュー-->
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item nav-link" href="#">HOME</li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            CONCEPT
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+          </ul>
+          <!--ドロップダウン押下で表示-->
+        </li>
+        <li class="nav-item nav-link" href="#">SERVICE</li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FLOOR</a>
+        </li>
+        <li class="nav-item nav-link" href="#">INTERVIEW</li>
+        <li class="nav-item nav-link" href="#">BLOG</li>
+        <li class="nav-item nav-link" href="#">ACCESS</li>
+        <li class="nav-item nav-link" href="#">DOWNLOAD</li>
+      </ul>
+    </div>
   </div>
-</div>
+</nav>
