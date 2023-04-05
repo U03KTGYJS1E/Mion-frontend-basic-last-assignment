@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 .page {
-  width: 460px;
+  margin-bottom: 30px;
   .news-and-events-title {
     margin-bottom: 32px;
   }
@@ -11,6 +11,7 @@
     padding-left: 0px;
     margin-bottom: 30px;
     li {
+      padding: 20px;
       border-bottom: 1px solid $gray_gainsboro;
       list-style: none;
 
@@ -19,17 +20,22 @@
       }
       .date {
         color: $gray_nobel;
+        font-size: $fontsize-xs;
+        line-height: 12px;
+        margin-bottom: 10px;
       }
       .info {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-size: $fontsize-m;
+        line-height: 23px;
+        margin-bottom: 0px;
       }
     }
   }
 
   .news-and-events-more {
     float: right;
-    margin-top: none;
   }
 }
