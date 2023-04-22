@@ -1,6 +1,5 @@
 @use "../../variables" as *;
-.page {
-  margin-bottom: 30px;
+.news {
   .news-and-events-title {
     margin-bottom: 32px;
   }
@@ -18,7 +17,7 @@
       &:last-child {
         border-bottom: 0px;
       }
-      .date {
+      time {
         color: $gray_nobel;
         font-size: $fontsize-xs;
         line-height: 12px;
@@ -30,12 +29,12 @@
         text-overflow: ellipsis;
         font-size: $fontsize-m;
         line-height: 23px;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
       }
     }
   }
 
-  .news-and-events-more {
-    float: right;
+  .more {
+    text-align: right;
   }
 }
