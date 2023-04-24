@@ -21,7 +21,6 @@
         color: $gray_nobel;
         font-size: $fontsize-xs;
         line-height: 12px;
-        margin-bottom: 10px;
       }
       .info {
         white-space: nowrap;
@@ -29,7 +28,8 @@
         text-overflow: ellipsis;
         font-size: $fontsize-m;
         line-height: 23px;
-        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 0px;
       }
     }
   }
