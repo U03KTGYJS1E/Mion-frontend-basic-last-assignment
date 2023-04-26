@@ -1,0 +1,43 @@
+@use "../../variables" as *;
+.news {
+  .news-and-events-title {
+    margin-bottom: 32px;
+  }
+  .list {
+    align-items: center;
+    background-color: $white;
+    border: 1px solid $gray_gainsboro;
+    padding-left: 0px;
+    margin-bottom: 30px;
+    li {
+      padding: 20px;
+      border-bottom: 1px solid $gray_gainsboro;
+      list-style: none;
+
+      &:last-child {
+        border-bottom: 0px;
+      }
+      time {
+        color: $gray_nobel;
+        font-size: $fontsize-xs;
+        line-height: 12px;
+      }
+      .info {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: $fontsize-m;
+        line-height: 23px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .more {
+    text-align: right;
+    .news-and-events-more {
+      margin-top: 0px;
+    }
+  }
+}
