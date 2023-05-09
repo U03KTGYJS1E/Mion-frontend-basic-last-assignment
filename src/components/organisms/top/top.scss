@@ -2,7 +2,7 @@
 
 .top {
   padding: 0px;
-  .above {
+  .top-wrapper {
     position: relative;
 
     img {
@@ -12,7 +12,7 @@
         height: 360px;
       }
     }
-    .twi {
+    .top-tagline {
       color: $white;
       position: absolute;
       top: 50%;
@@ -27,8 +27,11 @@
       }
     }
   }
-  .message {
+  .top-message {
     background-color: $black;
-    color: $white;
+    .message {
+      color: $white;
+      align-items: center;
+    }
   }
 }
