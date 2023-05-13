@@ -2,6 +2,7 @@
 
 .top {
   padding: 0px;
+  background-color: $black;
   .top-wrapper {
     position: relative;
 
@@ -27,8 +28,7 @@
       }
     }
   }
-  .top-message {
-    background-color: $black;
+  .container {
     .message {
       color: $white;
       align-items: center;
