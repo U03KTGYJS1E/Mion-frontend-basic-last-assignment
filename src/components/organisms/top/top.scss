@@ -28,10 +28,14 @@
       }
     }
   }
-  .container {
+  .top-message {
+    padding: 0px 16px;
+    @media screen and(max-width: $breakpoint-lg) {
+      padding: 0px 136px;
+    }
     .message {
-      color: $white;
       align-items: center;
+      color: $white;
     }
   }
 }
