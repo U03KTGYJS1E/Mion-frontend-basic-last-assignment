@@ -1,0 +1,41 @@
+@use "../../variables" as *;
+
+.top {
+  padding: 0px;
+  background-color: $black;
+  .top-wrapper {
+    position: relative;
+
+    img {
+      height: 100vh;
+      width: 100%;
+      @media screen and (max-width: $breakpoint-lg) {
+        height: 360px;
+      }
+    }
+    .top-tagline {
+      color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0px;
+      transform: translate(-50%, -50%);
+      writing-mode: vertical-rl;
+      font-family: $fontfamily-mincho;
+      font-size: $fontsize-xl;
+      @media screen and(max-width: $breakpoint-lg) {
+        font-size: $fontsize-l;
+      }
+    }
+  }
+  .top-message {
+    padding: 0px 16px;
+    @media screen and(max-width: $breakpoint-lg) {
+      padding: 0px 136px;
+    }
+    .message {
+      align-items: center;
+      color: $white;
+    }
+  }
+}
