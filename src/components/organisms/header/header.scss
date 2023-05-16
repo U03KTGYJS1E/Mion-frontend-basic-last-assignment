@@ -20,11 +20,21 @@
       }
     }
   }
+
   .navbar-toggler {
     border: none;
     margin-right: 4px;
     &:focus {
       box-shadow: none;
+    }
+  }
+  .navbar-collapse {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    width: 763px;
+    .nav-link {
+      color: white;
     }
   }
   #navbarSupportedContent {
