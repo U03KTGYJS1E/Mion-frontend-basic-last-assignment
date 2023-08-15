@@ -56,8 +56,8 @@
       line-height: 20px;
       overflow-wrap: break-word;
       &:last-child {
-        @media screen and (max-width: $breakpoint-md) {
-          margin-bottom: 20px;
+        @media screen and (max-width: $breakpoint-lg) {
+          padding-bottom: 40px;
         }
       }
     }

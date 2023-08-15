@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+.container {
+  padding: 56px 0px 35px;
+  @media screen and (max-width: $breakpoint-lg) {
+    padding-bottom: 100px;
+  }
+}
+.message {
+  padding: 52px 0px;
+  .title {
+    color: $orange_bistre;
+  }
+}
+.wrapper {
+  @media screen and (max-width: $breakpoint-lg) {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .plan {
+    margin-bottom: 20px;
+    @media screen and (max-width: $breakpoint-lg) {
+      width: 33%;
+      margin-bottom: 0px;
+    }
+  }
+}
+.atoms-button {
+  margin: 0 auto;
+}
