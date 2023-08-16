@@ -1,0 +1,74 @@
+@use "../../variables" as *;
+
+.container {
+  text-align: center;
+  align-items: center;
+  color: $black;
+
+  .contact {
+    border-bottom: 1px solid $gray_nobel;
+    padding: 52px 20px;
+    .wrapper {
+      padding-bottom: 20px;
+      img {
+        width: 150px;
+      }
+    }
+    .icon-list {
+      display: flex;
+      justify-content: center;
+      i {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+  nav {
+    padding: 16px;
+    background-color: $white_smoke;
+    display: flex;
+    justify-content: center;
+    ul {
+      margin-bottom: 0px;
+      padding: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      @media screen and(min-width: $breakpoint-lg) {
+        flex-grow: 1;
+      }
+      li + li {
+        border-left: 1px solid #333;
+        @media screen and(min-width: $breakpoint-lg) {
+          border: 0px;
+        }
+      }
+      li {
+        color: $black;
+        padding: 0px 4px;
+        @media screen and(min-width: $breakpoint-lg) {
+          margin: 5px;
+          width: calc(50% - 10px);
+          text-align: start;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: background-color 0.2s ease;
+        &:hover {
+          color: $orange_bistre;
+        }
+      }
+    }
+  }
+  .bottom {
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    font-size: $fontsize-xs;
+
+    padding: 16px;
+    height: 44px;
+  }
+}
