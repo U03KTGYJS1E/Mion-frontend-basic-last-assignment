@@ -6,28 +6,29 @@
   @media screen and (max-width: $breakpoint-lg) {
     margin: 40px 0px;
   }
-}
-.imgContent {
-  display: flex;
-  @media screen and (max-width: $breakpoint-lg) {
-    flex-wrap: wrap;
-  }
-  img {
-    width: 25%;
-    height: auto;
+  .imgContent {
+    display: flex;
     @media screen and (max-width: $breakpoint-lg) {
-      width: 50%;
+      flex-wrap: wrap;
+    }
+    img {
+      width: 25%;
+      height: auto;
+      @media screen and (max-width: $breakpoint-lg) {
+        width: 50%;
+      }
     }
   }
-}
-.top-message {
-  width: 100%;
-  background-color: $white_smoke;
-}
+  .top-message {
+    width: 100%;
+    background-color: $white_smoke;
 
-.title {
-  color: $orange_bistre;
-}
-.explain {
-  color: $black;
+    .title {
+      color: $orange_bistre;
+    }
+    .explain {
+      color: $black;
+      margin: 0px;
+    }
+  }
 }
