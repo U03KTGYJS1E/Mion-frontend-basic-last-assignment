@@ -1,14 +1,12 @@
 @use "../../variables" as *;
 
 .container {
-  padding: 0px;
-  margin: 0px;
   .cards {
     display: flex;
     justify-content: space-between;
     padding: 0px 0px 100px;
     gap: 24px;
-    @media (min-width: $breakpoint-lg) {
+    @media (max-width: $breakpoint-lg) {
       display: block;
       padding-bottom: 40px;
     }
@@ -16,18 +14,9 @@
   .card {
     flex: 1;
     .card-body {
-      .third {
-        @media (max-width: $breakpoint-lg) {
-          margin-bottom: 63px;
-        }
-      }
-      .atoms-button {
-        width: auto;
-        @media screen and(min-width: $breakpoint-lg) {
-          height: 45px;
-          width: 180px;
-        }
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 }
