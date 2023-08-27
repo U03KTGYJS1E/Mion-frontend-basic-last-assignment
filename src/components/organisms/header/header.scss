@@ -35,14 +35,16 @@
   .navbar-collapse {
     flex-direction: row-reverse;
     align-items: center;
-    @media (max-width: $breakpoint-xl) {
-      margin-right: 0;
-      background-color: black;
+    margin-right: 0;
+    background-color: black;
+    @media (min-width: $breakpoint-xl) {
+      background-color: $black_50;
     }
 
     .active {
-      @media (max-width: $breakpoint-xl) {
-        margin-top: 10px;
+      margin-top: 10px;
+      @media (min-width: $breakpoint-xl) {
+        margin-top: 0px;
       }
     }
     #nav-Dropdown {
@@ -74,22 +76,21 @@
     .dropdown-menu {
       border: none;
       background-color: $black;
-      padding: 0;
-      margin-left: 28px;
+      padding: 0px;
+      margin-left: 12px;
       border-radius: 0;
       width: 220px;
+      @media (min-width: $breakpoint-xl) {
+        margin-left: 0px;
+      }
       .dropdown-item {
         padding: 18px;
         transition: 0.2s ease;
         color: $white;
         &:hover {
-          background-color: $orange_bistre;
-        }
-        @media (max-width: $breakpoint-xl) {
-          padding: 15px 16px 15px 28px;
           background-color: $black;
-          &:hover {
-            background-color: $black;
+          @media (min-width: $breakpoint-xl) {
+            background-color: $orange_bistre;
           }
         }
       }
