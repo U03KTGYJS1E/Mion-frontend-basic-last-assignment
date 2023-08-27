@@ -1,0 +1,23 @@
+@use "../../variables" as *;
+
+.container {
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 100px;
+    gap: 24px;
+    @media (max-width: $breakpoint-lg) {
+      flex-direction: column;
+      gap: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  .card {
+    flex: 1;
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
