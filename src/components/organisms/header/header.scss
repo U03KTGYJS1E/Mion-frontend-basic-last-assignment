@@ -49,12 +49,27 @@
     }
     #nav-Dropdown {
       display: block;
+      .dropdown-toggle {
+        display: flex;
+        justify-content: space-between;
+      }
       .dropdown-toggle::after {
         display: none;
       }
-      .collapse-button {
-        @media (min-width: $breakpoint-xl) {
+      [aria-expanded="false"] {
+        .bi-plus-circle {
+          display: block;
+        }
+        .bi-dash-circle {
           display: none;
+        }
+      }
+      [aria-expanded="true"] {
+        .bi-plus-circle {
+          display: none;
+        }
+        .bi-dash-circle {
+          display: block;
         }
       }
     }
