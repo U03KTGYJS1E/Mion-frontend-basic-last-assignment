@@ -7,7 +7,10 @@
 
   .contact {
     border-bottom: 1px solid $gray_nobel;
-    padding: 52px 20px;
+    padding: 32px 20px;
+    @media screen and(max-width:$breakpoint-lg) {
+      padding: 52px 20px;
+    }
     .wrapper {
       padding-bottom: 20px;
       img {
@@ -17,9 +20,15 @@
     .icon-list {
       display: flex;
       justify-content: center;
+      gap: 14px;
+
       i {
         width: 14px;
         height: 14px;
+        transition: color 0.2s ease;
+        &:hover {
+          color: $gray_nobel;
+        }
       }
     }
   }
@@ -34,19 +43,19 @@
       display: flex;
       flex-wrap: wrap;
       list-style: none;
-      @media screen and(min-width: $breakpoint-lg) {
+      @media screen and(max-width: $breakpoint-lg) {
         flex-grow: 1;
       }
       li + li {
         border-left: 1px solid #333;
-        @media screen and(min-width: $breakpoint-lg) {
+        @media screen and(max-width: $breakpoint-lg) {
           border: 0px;
         }
       }
       li {
         color: $black;
         padding: 0px 4px;
-        @media screen and(min-width: $breakpoint-lg) {
+        @media screen and(max-width: $breakpoint-lg) {
           margin: 5px;
           width: calc(50% - 10px);
           text-align: start;
@@ -63,11 +72,9 @@
     }
   }
   .bottom {
-    text-align: center;
     background-color: $black;
     color: $white;
     font-size: $fontsize-xs;
-
     padding: 16px;
     height: 44px;
   }
