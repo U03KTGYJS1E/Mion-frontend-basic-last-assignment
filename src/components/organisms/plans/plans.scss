@@ -1,46 +1,49 @@
 @use "../../variables" as *;
-.container {
-  padding: 56px 0px 100px;
+.plans.container {
+  margin-top: 56px;
+  margin-bottom: 35px;
   @media screen and (min-width: $breakpoint-lg) {
-    padding-bottom: 35px;
+    margin-bottom: 100px;
   }
-}
-.message {
-  padding: 0px 20px 32px;
-  margin-bottom: 20px;
-  @media screen and (min-width: $breakpoint-lg) {
-    margin-bottom: 0px;
-  }
-  .title {
-    color: $orange_bistre;
-    margin-bottom: 0px;
-    padding-bottom: 6px;
-  }
-  .explain {
-    margin-bottom: 0px;
-  }
-}
-.wrapper {
-  @media screen and (min-width: $breakpoint-lg) {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 40px;
-  }
-  .plan {
-    margin-bottom: 20px;
-    height: 100%;
+
+  .message {
+    padding: 0px 20px 32px;
+    margin-bottom: 24px;
     @media screen and (min-width: $breakpoint-lg) {
-      width: 33%;
       margin-bottom: 0px;
     }
-    .list li:last-child {
-      @media screen and (max-width: $breakpoint-lg) {
-        padding-bottom: 20px;
+    .title {
+      color: $orange_bistre;
+      margin-bottom: 0px;
+      padding-bottom: 6px;
+    }
+    .explain {
+      margin-bottom: 0px;
+    }
+  }
+  .wrapper {
+    margin-bottom: 24px;
+    @media screen and (min-width: $breakpoint-lg) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    .plan {
+      margin-bottom: 24px;
+      height: 100%;
+      @media screen and (min-width: $breakpoint-lg) {
+        width: 33%;
+        margin-bottom: 0px;
+      }
+      .list li:last-child {
+        @media screen and (max-width: $breakpoint-lg) {
+          padding-bottom: 20px;
+        }
       }
     }
   }
-}
 
-.atoms-button {
-  margin: 0 auto;
+  .atoms-button {
+    margin: 0 auto;
+  }
 }
