@@ -29,6 +29,9 @@
     font-weight: 700;
     font-size: $fontsize-xxl;
     line-height: 58px;
+    .p {
+      padding-bottom: 16px;
+    }
     .¥ {
       font-size: $fontsize-l;
       line-height: 29px;
@@ -39,7 +42,6 @@
       font-weight: 400;
       font-size: $fontsize-s;
       line-height: 20px;
-      margin-top: 6px;
       margin-bottom: 0px;
     }
   }
