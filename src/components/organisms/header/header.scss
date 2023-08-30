@@ -9,6 +9,7 @@
     height: 90px;
     background-color: $black_50;
     font-size: $fontsize-s;
+    padding-right: 30px;
   }
   .navbar-brand {
     img {
@@ -38,7 +39,7 @@
     margin-right: 0;
     background-color: black;
     @media (min-width: $breakpoint-xl) {
-      background-color: $black_50;
+      background-color: transparent;
     }
 
     .active {
@@ -59,6 +60,9 @@
       [aria-expanded="false"] {
         .bi-plus-circle {
           display: block;
+          @media (min-width: $breakpoint-xl) {
+            display: none;
+          }
         }
         .bi-dash-circle {
           display: none;
@@ -70,6 +74,9 @@
         }
         .bi-dash-circle {
           display: block;
+          @media (min-width: $breakpoint-xl) {
+            display: none;
+          }
         }
       }
     }
@@ -79,8 +86,12 @@
         display: block;
         align-items: center;
         padding: 20px;
+        @media screen and(min-width:$breakpoint-xl) {
+          padding: 35px 20px;
+        }
         color: $white;
         width: 100%;
+        transition: 0.2s ease;
         &:hover {
           @media (min-width: $breakpoint-xl) {
             color: $gray_nobel;
@@ -97,6 +108,7 @@
       width: 220px;
       @media (min-width: $breakpoint-xl) {
         margin-left: 0px;
+        margin-top: 0px;
       }
       .dropdown-item {
         padding: 18px;
