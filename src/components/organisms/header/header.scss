@@ -5,10 +5,10 @@
   height: 60px;
   background-color: $black;
   padding: 10px 0px;
+  font-size: $fontsize-s;
   @media (min-width: $breakpoint-xl) {
     height: 90px;
     background-color: $black_50;
-    font-size: $fontsize-s;
     padding-right: 30px;
   }
   .navbar-brand {
@@ -25,6 +25,7 @@
   .navbar-toggler {
     border: none;
     margin-right: 4px;
+    outline: none;
     &:focus {
       box-shadow: none;
     }
@@ -79,13 +80,16 @@
           }
         }
       }
+      .dropdown-menu {
+        font-size: $fontsize-s;
+      }
     }
 
     .nav-item {
       .nav-link {
         display: block;
         align-items: center;
-        padding: 20px;
+        padding: 15px 16px;
         @media screen and(min-width:$breakpoint-xl) {
           padding: 35px 20px;
         }
@@ -108,10 +112,13 @@
       width: 220px;
       @media (min-width: $breakpoint-xl) {
         margin-left: 0px;
-        margin-top: 0px;
+        margin-top: -0.2578124851px;
       }
       .dropdown-item {
-        padding: 18px;
+        padding: 15px 12px;
+        @media (min-width: $breakpoint-xl) {
+          padding: 18px;
+        }
         transition: 0.2s ease;
         color: $white;
         &:hover {
