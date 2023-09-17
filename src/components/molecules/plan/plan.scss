@@ -8,6 +8,7 @@
       background: $orange_zorba;
       color: $white;
       padding: 20px 0px;
+      font-weight: 700;
     }
   }
   &:nth-child(even) {
@@ -17,6 +18,7 @@
       background-color: $orange_bistre;
       color: $white;
       padding: 20px 0px;
+      font-weight: 700;
     }
   }
 
@@ -29,16 +31,19 @@
     font-weight: 700;
     font-size: $fontsize-xxl;
     line-height: 58px;
+    .p {
+      padding-bottom: 16px;
+    }
     .¥ {
       font-size: $fontsize-l;
       line-height: 29px;
+      margin-right: 4px;
     }
     .fee {
       color: $black;
       font-weight: 400;
       font-size: $fontsize-s;
       line-height: 20px;
-      margin-top: 16px;
       margin-bottom: 0px;
     }
   }
@@ -56,8 +61,10 @@
       line-height: 20px;
       overflow-wrap: break-word;
       &:last-child {
-        @media screen and (max-width: $breakpoint-md) {
-          margin-bottom: 20px;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: $breakpoint-lg) {
+          margin-bottom: 0px;
         }
       }
     }
