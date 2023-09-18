@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 
-.container {
+.footer {
   text-align: center;
   align-items: center;
   color: $black;
@@ -8,14 +8,17 @@
 
   .contact {
     border-bottom: 1px solid $gray_nobel;
-    padding: 32px 20px;
-    @media screen and(max-width:$breakpoint-lg) {
-      padding: 52px 20px;
+    padding: 52px 20px;
+    @media screen and(max-width:$breakpoint-md) {
+      padding: 32px 20px;
     }
     .wrapper {
       padding-bottom: 20px;
       img {
         width: 150px;
+      }
+      adress {
+        line-height: 28px;
       }
     }
     .icon-list {
@@ -39,39 +42,26 @@
   nav {
     padding: 16px;
     background-color: $white_smoke;
-    //display: flex;
-    //justify-content: center;
     ul {
       margin-bottom: 0px;
       padding: 0px;
-      //display: flex;
-      //flex-wrap: wrap;
       list-style: none;
-      //@media screen and(max-width: $breakpoint-lg) {
-      // flex-grow: 1;
-      //}
       columns: 8;
       column-rule: 1px solid;
       column-gap: 8px;
-      @media screen and(max-width: $breakpoint-lg) {
+      @media screen and(max-width: $breakpoint-md) {
         columns: 2;
         column-rule: none;
       }
 
-      li + li {
-        //border-left: 1px solid #333;
-        @media screen and(max-width: $breakpoint-lg) {
-          border: 0px;
+      li {
+        @media screen and(max-width: $breakpoint-md) {
+          text-align: start;
+          padding-bottom: 8px;
         }
       }
-      li {
-        //color: $black;
-        //padding: 0px 4px;
-        @media screen and(max-width: $breakpoint-lg) {
-          /* margin: 5px;
-          width: calc(50% - 10px);*/
-          text-align: start;
-        }
+      :nth-child(4n) {
+        padding-bottom: 0px;
       }
       a {
         text-decoration: none;
