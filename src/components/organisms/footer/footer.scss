@@ -46,23 +46,28 @@
       margin-bottom: 0px;
       padding: 0px;
       list-style: none;
-      columns: 8;
-      column-rule: 1px solid;
-      column-gap: 8px;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
       @media screen and(max-width: $breakpoint-md) {
-        columns: 2;
-        column-rule: none;
+        flex-wrap: wrap;
       }
 
       li {
+        padding-right: 8px;
+        &:not(:last-child) {
+          border-right: 1px solid $black;
+          @media screen and(max-width: $breakpoint-md) {
+            border-right: none;
+          }
+        }
         @media screen and(max-width: $breakpoint-md) {
+          width: 49.2%;
           text-align: start;
-          padding-bottom: 8px;
+          border: none;
         }
       }
-      :nth-child(4n) {
-        padding-bottom: 0px;
-      }
+
       a {
         text-decoration: none;
         color: inherit;
@@ -78,7 +83,7 @@
     color: $white;
     font-size: $fontsize-xs;
     padding: 16px;
-    height: 44px;
+    line-height: 1;
     display: block;
   }
 }
