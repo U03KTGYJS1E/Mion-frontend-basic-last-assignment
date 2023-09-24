@@ -1,0 +1,32 @@
+@use "../../variables" as *;
+
+.newsEvents {
+  padding: 0rem 1rem;
+  background-color: $white_smoke;
+  .news-events {
+    padding: 56px 0px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $breakpoint-lg) {
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      gap: 35px;
+    }
+    .news {
+      width: 48%;
+      @media screen and (max-width: $breakpoint-lg) {
+        width: 88%;
+      }
+    }
+    .events {
+      width: 48%;
+      @media screen and (max-width: $breakpoint-lg) {
+        width: 88%;
+      }
+      .event-list h3 {
+        font-weight: 400;
+      }
+    }
+  }
+}
