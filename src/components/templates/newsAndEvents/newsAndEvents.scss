@@ -18,14 +18,25 @@
       @media screen and (max-width: $breakpoint-lg) {
         width: 88%;
       }
+      .news-and-events-title h2 {
+        @media screen and (max-width: $breakpoint-lg) {
+          font-size: $fontsize-l;
+        }
+      }
     }
     .events {
       width: 48%;
       @media screen and (max-width: $breakpoint-lg) {
         width: 88%;
+        margin-bottom: 0px;
       }
       .event-list h3 {
         font-weight: 400;
+      }
+      .event-thumbnail {
+        @media screen and (max-width: $breakpoint-lg) {
+          display: none;
+        }
       }
     }
   }
