@@ -1,12 +1,12 @@
 @use "../../variables" as *;
 
 .newsEvents {
-  padding: 0rem 1rem;
   background-color: $white_smoke;
   .news-events {
     padding: 56px 0px;
     display: flex;
     justify-content: space-between;
+
     @media screen and (max-width: $breakpoint-lg) {
       justify-content: center;
       align-items: center;
@@ -18,6 +18,9 @@
       @media screen and (max-width: $breakpoint-lg) {
         width: 88%;
       }
+    }
+    .news .list li time {
+      display: block;
     }
     .events {
       width: 48%;
@@ -42,6 +45,12 @@
     .event-caption {
       @media screen and (max-width: $breakpoint-lg) {
         width: 100% !important;
+      }
+    }
+    .events .event-list .event-card a {
+      height: 143.6px !important;
+      @media screen and (max-width: $breakpoint-lg) {
+        height: 80px !important;
       }
     }
   }
