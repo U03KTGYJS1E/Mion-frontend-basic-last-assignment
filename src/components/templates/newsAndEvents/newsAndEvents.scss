@@ -53,5 +53,11 @@
         height: 80px !important;
       }
     }
+    .news-and-events-more {
+      margin-top: 0px !important;
+      @media screen and (max-width: $breakpoint-lg) {
+        margin-top: 16px !important;
+      }
+    }
   }
 }
