@@ -1,0 +1,63 @@
+@use "../../variables" as *;
+
+.newsEvents {
+  background-color: $white_smoke;
+  .news-events {
+    padding: 56px 0px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $breakpoint-lg) {
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      gap: 35px;
+    }
+    .news {
+      width: 48%;
+      @media screen and (max-width: $breakpoint-lg) {
+        width: 88%;
+      }
+    }
+    .news .list li time {
+      display: block;
+    }
+    .events {
+      width: 48%;
+      @media screen and (max-width: $breakpoint-lg) {
+        width: 88%;
+        margin-bottom: 0px;
+      }
+      .event-list h3 {
+        font-weight: 400;
+      }
+    }
+    .news-and-events-title h2 {
+      @media screen and (max-width: $breakpoint-lg) {
+        font-size: $fontsize-l;
+      }
+    }
+    .event-thumbnail {
+      @media screen and (max-width: $breakpoint-lg) {
+        display: none !important;
+      }
+    }
+    .event-caption {
+      @media screen and (max-width: $breakpoint-lg) {
+        width: 100% !important;
+      }
+    }
+    .events .event-list .event-card a {
+      height: 143.6px !important;
+      @media screen and (max-width: $breakpoint-lg) {
+        height: 80px !important;
+      }
+    }
+    .news-and-events-more {
+      margin-top: 0px !important;
+      @media screen and (max-width: $breakpoint-lg) {
+        margin-top: 16px !important;
+      }
+    }
+  }
+}
